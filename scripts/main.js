@@ -1,13 +1,13 @@
 
 "use strict";
-function factorial()
+function factorial_num()
 {
   var n=document.getElementById("num").value;
   var answer = 1;
   if (n == 0 || n == 1)
   {
     answer=answer+"";
-    document.getElementById("factorial").innerHTML= answer;
+    document.getElementById("fac").innerHTML= answer;
   }
   else
   {
@@ -16,6 +16,6 @@ function factorial()
       answer = answer * i;
     }
     answer=answer+"";
-    document.getElementById("factorial").innerHTML=answer;
+    document.getElementById("fac").innerHTML=answer;
   }
 }
